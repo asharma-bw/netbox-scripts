@@ -4,8 +4,8 @@ from core.models import DataSource
 
 class SyncDataSourceJob(Script):
     class Meta:
-        name = "Sync Data Source"
-        description = "Manually sync a specific data source"
+        name = "Sync DataSource - Test"
+        description = "Test Manually sync a specific data source"
         has_sensitive_variables = False
 
     def run(self, data, commit):
