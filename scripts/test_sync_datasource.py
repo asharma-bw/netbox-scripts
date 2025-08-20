@@ -14,7 +14,7 @@ class SyncDataSourceJob(Script):
         # Get the data source by name or ID
         try:
             datasource = DataSource.objects.get(name="test-netbox-scripts")
-            datasource.sync() #Uncomment this to sync datasource.
-            self.log_success(f"Successfully synced data source: {datasource.name}")
+            datasource.sync() #Uncomment this to sync datasource...
+            self.log_success(f"Successfully synced datasource: {datasource.name}")
         except DataSource.DoesNotExist:
             self.log_failure(f"Data source 'test-netbox-scripts' not found.")
